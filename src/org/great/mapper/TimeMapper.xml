@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="org.great.mapper.TimeMapper">
+	<select id="findTimeBeanByeId" resultType="org.great.bean.TimeBean">
+		select * from tb_time where eId = #{0}
+	</select>
+	<update id="updatetStateByeId" parameterType="java.lang.Integer">
+		update tb_time set tState=#{1} where eId = #{0}
+	</update>
+	<update id="updatetCurrentByeId" parameterType="java.lang.Integer">
+		update tb_time set tCurrent = #{1} where eId = #{0}
+	</update>
+</mapper>

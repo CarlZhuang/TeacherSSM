@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="org.great.mapper.SocreMapper">
+	<!-- IFNULL(MAX(sScore),-1):指的是：如果sScore这个字段的最大值是null，那么返回一个默认的值-1 -->
+	<select id="findExamineeScoreByexId" resultType="java.lang.Integer">
+		select IFNULL(MAX(sScore),-1) as sScore from tb_score where exId = #{0}
+	</select>
+</mapper>

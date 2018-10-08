@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+#content{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:grey;
+}
+#conHead{
+	width:100%;
+	height:100px;
+}
+#conHead h1{
+	margin-left:30px;
+	float:left;
+	line-height:100px;
+}
+#conHead h4{
+	margin-right:100px;
+	float:right;
+	line-height:100px;
+}
+#conBody{
+	width:100%;
+	height:100%;
+	display:flex;
+	wrap:no-wrap;
+	background:green;
+}
+#menus{
+	width:200px;
+	height:100%;
+	float:left;
+}
+
+#level1{
+	width:100%;
+	height:auto;
+	padding-left:10px;
+}
+#level1>a{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-decoration:none;
+	background:yellow;
+}
+
+#level2{
+	width:100%;
+	height:auto;
+	margin-left:10px;
+	list-style:none;
+}
+#level2>a{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-decoration:none;
+	background:orange;
+}
+
+#frames{
+	left:150px;
+	width:100%;
+	height:100%;
+	float:left;
+	background:red;
+}
+#frames iframe{
+	width:100%;
+	height:100%;
+	border:0px;
+}

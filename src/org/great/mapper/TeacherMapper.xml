@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="org.great.mapper.TeacherMapper">
+
+	<select id="findTeacherBeanByAcountPwd" resultType="org.great.bean.TeacherBean">
+		select * from tb_teacher where teAcount=#{0} and tePwd=#{1}
+	</select>
+	<update id="updateTeacherBean">
+		update tb_teacher set teName=#{1},teSex=#{2},tePhone=#{3} where teId = #{0}
+	</update>
+	<update id="updatePwdByIdPwd">
+		update tb_teacher set tePwd=#{1} where teId = #{0}
+	</update>
+	<select id="getNameByteId" resultType="java.lang.String">
+		select teName from tb_teacher where teId=#{0}
+	</select>
+</mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="org.great.mapper.JoinMapper">
+	<select id="findJoinState" resultType="java.lang.Integer">
+		select jState from tb_join where exId = #{0}
+	</select>
+	<update id="updatejStateByexIdeId" parameterType="java.lang.Integer">
+		update tb_join set jState = #{0} where exId =#{1} and eId =#{2}
+	</update>
+</mapper>

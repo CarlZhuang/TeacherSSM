@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+#content{
+	width:100%;
+	height:100%;
+}
+#conHead{
+	width:100%;
+	height:100px;
+	text-align: center;
+	position:relative;
+	border:1px black solid;
+}
+#conHead h1{
+	line-height:100px;
+}
+#conHead h4{
+	margin:0px auto;
+	width:90%;
+	position:absolute;
+	left:50%;    /* 定位父级的50% */
+	transform: translate(-50%);
+	bottom:0;
+}
+#conBody{
+	width:100%;
+	height:100%;
+	display:flex;
+	wrap:no-wrap;
+}
+#menus{
+	width:300px;
+	height:100%;
+	float:left;
+	border:1px black solid;
+}
+
+#level1{
+	width:100%;
+	height:auto;
+	padding-left:10px;
+	line-height:60px;
+	text-align:center;
+}
+button{
+	width:120px;
+	height:40px;
+	line-height:40px;
+	font-size:16pt;
+}
+
+#stulist{
+	left:300px;
+	width:100%;
+	height:100%;
+	float:left;
+	overflow:auto;
+	border:1px black solid;
+}
+#stulist h4,#outside{
+	padding-left:50px;
+	margin-top:10px;
+}
+#outside{
+	width:100%;
+	height:auto;
+	border-collapse:separate; border-spacing:0px 10px;
+}
+.inside{
+	width:60%;
+	border:1px black solid;
+	font-size:30px;
+	text-align:center;
+	background:grey;
+}
+#zhezhao{
+	display:none;
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:99;
+	left:0px;
+	top:0px;
+	opacity:0.9;
+	background: grey;
+}
+
+#zheCon{
+	position: absolute;
+	width:70%;
+	height:70%;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	background: blue;
+}
+
+#score{
+	margin:0px auto;
+	margin-top:20px;
+	background:white;
+	text-align:center;
+}
+#score tr{
+	font-size: 16pt;
+	height:40px;
+	line-height:40px;
+}
+
+#btn{
+	width:100%;
+}
+#btn input{
+	margin:20px;
+	width: 120px;
+	height: 30px;
+	font-size:16pt;
+	line-height: 30px;
+}
